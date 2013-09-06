@@ -9,3 +9,4 @@ I hope I'll find it useful, fun and interesting !
 ## Usage
 
 1. Install the [Haskell Platform](http://www.haskell.org/platform/)
+2. Each directory maps to a chapter of the book
