@@ -47,3 +47,32 @@ fourthLetter = aSmallCat !! 3 -- => 'M'
 lyst = [[1], [2]]
 lyst1 = lyst !! 0 -- => [1]
 lyst11 = (lyst !! 0) !! 0 -- => 1
+
+---------------------------------
+-- Chapter Texas ranges
+---------------------------------
+
+one2twenty = [1..20]
+
+-- ranges can omit first or last of range
+-- [1..] -- 1 to infinity
+-- ['a'..] -- a to... last Unichode char ? I don't know.
+
+-- range can have a step
+evenNumbers = [2,4..10]
+
+-- step works on chars too !
+evenChars = ['a', 'c' .. 'z']
+
+-- reverse ranges have to specify steps, since default step increase value
+reverseNumbers = [20,19..1] -- [20..1] doesn't work
+reverseChars = ['Z', 'Y' .. 'A'] -- ['Z'..'A'] doesn't work either
+
+-- Haskell is lazy, so it won't evaluate infinite lists if we take only part of it
+first20 = take 20 [5,10..]
+lolol = take 20 (cycle "lol ")
+
+-- Equivalent : twenty5s == twenty5s' => True
+twenty5s = take 20 (repeat 5)
+twenty5s' = replicate 20 5
+
