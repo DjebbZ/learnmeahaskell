@@ -76,3 +76,19 @@ lolol = take 20 (cycle "lol ")
 twenty5s = take 20 (repeat 5)
 twenty5s' = replicate 20 5
 
+-----------------------------------
+-- Chapter I'm a list comprehension
+-----------------------------------
+
+-- both are equivalent
+-- be careful about the - character
+evenNumbers' = [x | x <- [1..10], x `mod` 2 == 0]
+evenNumbers'' = [x*2 | x <- [1..5]]
+
+-- list comprehension works on strings, since they're lists
+onlyUppercase st = [c | c <- st, c `elem` ['A'..'Z']]
+
+-- they can be nested
+evenNumbersList xxs = [[x | x <- xs, even x] | xs <- xxs]
+-- evenNumbersList [[1,2,3], [4,5,6], [7,8,9]] => [[2],[4,6],[8]]
+
