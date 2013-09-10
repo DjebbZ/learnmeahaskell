@@ -1,5 +1,5 @@
 ---------------------------------
--- Chapter Baby's first functions
+-- Baby's first functions
 ---------------------------------
 
 -- Function definiton
@@ -21,7 +21,7 @@ yo = "Yo !"
 
 
 ---------------------------------
--- Chapter An intro to lists
+-- An intro to lists
 ---------------------------------
 
 -- Lists are homogeneous array-like data structures
@@ -49,7 +49,7 @@ lyst1 = lyst !! 0 -- => [1]
 lyst11 = (lyst !! 0) !! 0 -- => 1
 
 ---------------------------------
--- Chapter Texas ranges
+-- Texas ranges
 ---------------------------------
 
 one2twenty = [1..20]
@@ -77,7 +77,7 @@ twenty5s = take 20 (repeat 5)
 twenty5s' = replicate 20 5
 
 -----------------------------------
--- Chapter I'm a list comprehension
+-- I'm a list comprehension
 -----------------------------------
 
 -- both are equivalent
