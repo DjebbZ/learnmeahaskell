@@ -21,3 +21,14 @@ x `percentOf` y
     | p == 100  = "Full !"
     | otherwise = "Too much, man."
     where p = x / y * 100
+
+
+
+--------------------
+-- Playground
+--------------------
+
+-- Count the number of spaces in a String
+nbSpaces :: String -> Int
+nbSpaces "" = 0
+nbSpaces x  = length $ filter (== ' ') x
